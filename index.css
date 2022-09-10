@@ -1,0 +1,394 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.accueil{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 20px, 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .logo{
+  width: 80px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 40px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+
+}
+
+.content{
+  text-align: center;
+}
+
+.content h1{
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.content h1:hover{
+  -webkit-text-stroke: 2px #FFE4B5;
+  color: transparent;
+}
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+[class^="cursor"]{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-outer{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  transition: all .08s ease-out;
+}
+
+.cursor-inner{
+  width: 7px;
+  height: 7px;
+  background: #fff;
+}
+
+body{
+  cursor: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+/*services*/
+
+.services{
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/salon.png);
+  background-position: center;
+  background-size: cover;
+ /* padding left: 8%;
+  padding-right: 8%;
+*/
+  /*filter: blur(5px);*/
+  /*position: relative;*/
+  padding: 5%;
+ /* display: flex;
+  align-items: center;
+  justify-content:center;*/
+}
+
+.row{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.col{
+  flex-basis: 50%;
+}
+
+.services h1{
+  color: #fff;
+  font-size: 70px;
+}
+
+.services p {
+  color: black;
+  font-size: 15pxpx;
+  line-height: 15px;
+}
+
+.services button{
+  width: 180px;
+  color: #000;
+  font-size: 14px;
+  padding: 17px 0;
+  margin: 20px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  transition: transform 0.5s;
+}
+
+.services button:hover {
+  transform: translateY(-10px);
+}
+
+.card {
+  width: 250px;
+  height: 280px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(assets/lola.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/*histoire*/
+
+.histoire{
+   width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+/*reservation*/
+
+.reservation{
+   width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+/*contact*/
+
+.contact{
+  background: #1b1c1e;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.contact h1{
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+p{
+  color:  #d2d2d2;
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+input, textarea, label{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #828282;
+}
+
+input, textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #828282;
+}
+
+input[type=envoie]{
+  background-color: #545557;
+  padding: 15px 0;
+  color: white;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+  text-align: center;
+}
+
+input[type=envoie]:hover{
+  background: white;
+  color: #1b1c1e;
+
+}
+
+input, textarea{
+  color: white;
+  font-size: 18px;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid #828282;
+}
+
+.contact a{
+  color: #828282;
+  font-style: italic;
+}
+
+.contact a:hover{
+  color: #fff;
+}
+
+
+/*Contact Bis*/
+
+/*.contact h2{
+  color: white;
+  font-size: 60px;
+}
+
+.contact h2:hover{
+  color:#FFE4B5 ;
+}
+*/
+
+/*footer*/
+
+ footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+ }
+
+ .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+ }
+
+ .footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+ }
+
+ .footer-content p{
+  max-width: 500px;
+  margin: 1àpx auto;
+  line-height: 28px;
+  font-size: 14px;
+ }
+
+ .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+ }
+
+ .socials li{
+  margin: 0 10px;
+ }
+
+ .socials a {
+  text-decoration: none;
+  color: #fff;
+ }
+
+ .socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+ }
+
+ .socials a:hover i {
+  color: #FFE4B5;
+ }
+
+ .footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+ }
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-decoration: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}

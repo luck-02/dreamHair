@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Hair</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <!-- CURSEUR -->
+
+  <div class="cursor-outer"></div>
+  <div class="cursor-inner"></div>
+
+  <script>
+    let cursor = document.querySelector(".cursor-inner");
+    let cursor2 = document.querySelector(".cursor-outer");
+
+    document.addEventListener("mousemove", e=>{
+      // console.log(e);
+      cursor.style.top = e.clientY + "px";
+      cursor.style.left = e.clientX + "px";
+
+      cursor2.style.top = e.clientY + "px";
+      cursor2.style.left = e.clientX + "px";
+    })
+  </script>
+
+  <!-- ACCUEIL -->
+
+  <div class="accueil">
+
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="assets/parfait.mp4" type="video/mp4">
+    </video>
+
+    <nav>
+      <img src="assets/ndos.png" class="logo">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Nos services</a></li>
+        <li><a href="#histoire">Notre histoire</a></li>
+        <li><a href="#reservation">Réserver</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Dream Hair</h1>
+      <a href="#services">Explore</a>
+    </div>
+
+  </div>
+
+  <!-- SERVICES -->
+
+  <div class="services" id="services">
+
+    <div class="row">
+
+      <div class="col">
+        <h1>Nos Services</h1>
+        <blockquote>
+          " La chose la plus séduisante  qu'une femme puisse avoir c'est sa confiance en elle c'est sa confiance en elle."
+        </blockquote> <br>
+        <p>Beyonce</p>
+        <button type="button">Prendre Rendez-vous</button>
+      </div>
+
+      <div class="col">
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- HISTOIRE -->
+
+  <div class="histoire"></div>
+
+  <!-- RESERVATION -->
+
+  <div class="reservation"></div>
+
+  <!-- CONTACT -->
+
+ <!--  <div class="contact" id="contact">
+    <h1> Contact Me</h1>
+    <p>N'hésitez pas à nous contacter, nous sommes disponible au : <br></p>
+    <h2>06 59 16 85 94</h2>
+
+  </div>
+ -->
+
+
+  <!-- CONTACT BIS -->
+
+  <div class="contact" id="contact">
+    <h1> Contact Me</h1>
+    <p>N'hésitez pas à nous contacter, nous vous répondrons dans les plus court délais</p>
+
+    <form method="post" action="mail.php">
+
+      <label for="name">Name : </label>
+      <input type="text" name="name" id="name">
+
+      <label for="email">Email : </label>
+      <input type="email" name="email" id="email">
+
+      <label for="sujet">Sujet : </label>
+      <input type="text" name="sujet" id="sujet">
+
+      <label for="message">Message : </label>
+      <textarea name="message" id="message" rows="10" cols="30 "></textarea>
+
+      <input type="submit" value="Envoyer">
+
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Dream Hair</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates impedit modi quam aliquam hic corrupti aut saepe! Vitae assumenda distinctio natus sequi, ipsa omnis fugit provident soluta, amet earum commodi.</p>
+
+      <ul class="socials">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-google"></i></a></li>
+        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 DreamHair. Designed by <span>Lxck</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
