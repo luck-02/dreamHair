@@ -40,9 +40,7 @@
     <nav>
       <img src="assets/ndos.png" class="logo">
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
         <li><a href="#services">Nos services</a></li>
-        <li><a href="#histoire">Notre histoire</a></li>
         <li><a href="#reservation">Réserver</a></li>
         <li><a href="#contact">Nous contacter</a></li>
       </ul>
@@ -67,7 +65,9 @@
           " La chose la plus séduisante  qu'une femme puisse avoir c'est sa confiance en elle c'est sa confiance en elle."
         </blockquote> <br>
         <p>Beyonce</p>
-        <button type="button">Prendre Rendez-vous</button>
+
+        <button onclick="window.location.href = '#reservation';">Prendre Rendez-vous</button>
+
       </div>
 
       <div class="col">
@@ -85,13 +85,30 @@
 
   </div>
 
-  <!-- HISTOIRE -->
-
-  <div class="histoire"></div>
-
   <!-- RESERVATION -->
 
-  <div class="reservation"></div>
+  <div class="reservation" id="reservation">
+
+
+    <div class="gauche">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5329.180725930759!2d-1.6925465714111243!3d48.0988462625885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edff4bf8c8c5f%3A0x539b62e924d66517!2s1%20Rue%20des%20Munitionnettes%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1663174730153!5m2!1sfr!2sfr" width="600" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="droite">
+
+      <h1>Réserver maintenant</h1>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus expedita voluptate, quod atque delectus est tenetur nulla nesciunt fuga aliquam aliquid corporis.</p>
+
+      <div class="bas">
+        <a href="tel:+330695241285"> Réserver maintenant au :<br></a>
+        <h2> 0695241285</h2>
+      </div>
+
+    </div>
+
+  </div>
+
 
   <!-- CONTACT -->
 
