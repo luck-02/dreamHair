@@ -8,9 +8,9 @@ $message = $_POST['message'];
 $mailheader = "De: ".$name."<".$email.">\r\n";
 $recipient = "luck.ndzamba@gmail.com";
 
-mail($recipient, $sujet, $message, $mailheader) or die("Error!")
+mail($recipient, $sujet, $message, $mailheader) or die("Error!");
 
-echo'
+echo"
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +48,7 @@ echo'
 </html>
 
 
-';
+";
 
 
 
